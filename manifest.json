@@ -1,0 +1,28 @@
+{
+   "manifest_version": 2,
+  "name": "Cookie Handler",
+  "description": "Cookie Handler",
+  "version": "0.1",
+  "description": "A plain text description",
+  "icons": { "16": "image-png.png",
+             "48": "view.png",
+             "128": "image.png" },
+  
+  
+        "browser_action": {
+          "default_icon": {                    
+            "16": "image-png.png",
+             "48": "view.png",
+             "128": "image.png"
+          }
+        },
+    "background": {
+      "scripts": ["background.js"]
+  },
+  "permissions": [
+  "http://*/*",
+  "https://*/*",
+  "unlimitedStorage"
+]
+ 
+}

@@ -1,0 +1,25 @@
+<html>
+<head>
+<script language="JavaScript" type="text/javascript">
+
+    function getCookies(domain, name, callback) {
+    chrome.cookies.get({"url": domain, "name": name}, function(cookie) {
+        if(callback) {
+            callback(cookie.value);
+        }
+    });
+}
+
+//usage:
+getCookies("http://www.google.com", "id", function(id) {
+    alert(id);
+});
+</script>
+</head>
+<body>
+<form name="myform">
+<p> click the following button and see the result:</p>
+<input type="button" value="Get Cookie" onClick='getCookies("http://www.google.com","id");'/>
+</form>
+</body>
+</html>
